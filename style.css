@@ -169,7 +169,7 @@ body{
   }
   .mobileProject{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3,minmax(200px,300px));
     justify-items: center;
     align-items: center;
     align-content: center;
@@ -221,15 +221,25 @@ body{
  .phoneText{
     display: none;
 }
-.mobileProject img{
-    max-height: 500px;
+.contactContainer{
+    padding: 20px 0;
 }
-@media only screen and (max-width: 900px) {
+.mobileProject img{
+    max-height: 700px;
+}
+@media only screen and (max-width: 700px) {
 
-    /* .project{
-        display: flex;
-        
-    } */
+    .mobileProject{
+    grid-template-columns: repeat(2,minmax(200px,300px));
+
+    }
+    .detailsContainer{
+        flex-wrap: wrap;
+    }
+    .contactDetail{
+        margin-bottom: 20px;
+
+    }
 }
 
  @media only screen and (max-width: 600px) {
@@ -292,4 +302,11 @@ body{
   .contactDetail{
       /* width: 100%; */
   }
+ }
+ @media only screen and (max-width: 500px) {
+     .mobileProject{
+        display: grid;
+        grid-template-columns: 1fr;
+     }
+    
  }
