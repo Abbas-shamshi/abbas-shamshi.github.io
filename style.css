@@ -1,73 +1,58 @@
 html {
-    scroll-behavior: smooth;
-  }
-
-body{
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
+  scroll-behavior: smooth;
 }
-.navContainer{
-    grid-area: navContainer;
 
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
 }
-.logoContainer{
-    grid-area: logoContainer;
-
+.navContainer {
+  grid-area: navContainer;
 }
-.name{
-    grid-area: name;
-
+.logoContainer {
+  grid-area: logoContainer;
 }
-.role{
-    grid-area: role;
-
+.name {
+  grid-area: name;
 }
-.linkConatiner{
-    grid-area: linkConatiner;
-
+.role {
+  grid-area: role;
 }
-.links{
-    grid-area: links;
-
+.linkConatiner {
+  grid-area: linkConatiner;
 }
-.Container{
-    grid-area: Container;
-
+.links {
+  grid-area: links;
 }
-.mainContainer{
-    grid-area: mainContainer;
-
+.Container {
+  grid-area: Container;
 }
-.mainText{
-    grid-area: mainText;
+.mainContainer {
+  grid-area: mainContainer;
 }
-.buttonContainer{
-    grid-area: buttonContainer;
-
+.mainText {
+  grid-area: mainText;
 }
-.button{
-    grid-area: button;
-
+.buttonContainer {
+  grid-area: buttonContainer;
 }
-.ProjectConatainer{
-    grid-area: ProjectConatainer;
-
+.button {
+  grid-area: button;
 }
-.projectTitle{
-    grid-area: projectTitle;
-
+.ProjectConatainer {
+  grid-area: ProjectConatainer;
 }
-.project{
-    grid-area: project;
-
+.headTitle {
+  grid-area: headTitle;
 }
-.contactContainer{
-    grid-area: contactContainer;
-
+.project {
+  grid-area: project;
 }
-.contactDetail{
-    grid-area: contactDetail;
-
+.contactContainer {
+  grid-area: contactContainer;
+}
+.contactDetail {
+  grid-area: contactDetail;
 }
 /* .Container{
     width: 100%;
@@ -82,231 +67,367 @@ body{
     
     ;
 } */
-.navContainer{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-      "logoContainer  linkConatiner";
-    justify-content: center;
-    align-items: center;
-    background-color: cornflowerblue;
-    padding: 10px;
-    color: #013594;
+.navContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "logoContainer  linkConatiner";
+  justify-content: center;
+  align-items: center;
+  background-color: cornflowerblue;
+  padding: 10px;
+  color: #013594;
 }
-.links{
-    display: flex;
-    list-style-type: none;
-    justify-content: space-evenly;
-
+.links {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
 }
-.logoContainer{
-    margin-left: 10px;
-    font-size: 1.20em;
-
+.logoContainer {
+  margin-left: 10px;
+  font-size: 1.2em;
 }
-.links>li:hover{
-    color: #84848a;
+.links > li:hover {
+  color: #84848a;
 }
-.mainContainer{
-    height: 400px;
-    background-color: grey;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content: space-evenly;
+.mainContainer {
+  height: 400px;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
-.mainText{
-   text-align: center;
-   font-size: 1.950em;
+.mainText {
+  text-align: center;
+  font-size: 1.95em;
 }
-.buttonContainer{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: stretch;
+.buttonContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
 }
 .button {
-    background: rgb(131,58,180);
-    background: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
-    border: none;
-    color: white;
-    padding: 15px 32px;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  margin: 0 40px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  /* width: 400px; */
+  height: 100%;
+}
+
+.card:hover {
+  box-shadow: 0 16px 8px 8px rgba(245, 211, 117, 0.671);
+}
+.textContainer {
+  width: 100%;
+}
+.textContainer h4,
+p {
+  padding-left: 20px;
+}
+.project {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 500px));
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 0 40px;
+}
+.mobileProject {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 300px));
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  gap: 20px;
+  justify-content: space-around;
+}
+.detailsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  align-content: center;
+  justify-items: center;
+  /* height: 200px; */
+}
+.contactDetail {
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+  padding: 20px;
+  border-radius: 10px;
+}
+.contactDetail a {
+  color: white;
+}
+.projectImage {
+  width: 100%;
+}
+.headTitle {
+  font-size: 1.7em;
+  text-align: center;
+  padding: 50px 0 30px 0;
+}
+.ProjectConatainer {
+  margin: 20px 0;
+}
+ion-icon {
+  margin: 0 5px;
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+.phoneText {
+  display: none;
+}
+.contactContainer {
+  padding: 20px 0;
+}
+.mobileProject img {
+  max-height: 700px;
+}
+
+/* =============Time Line========= */
+* {
+  box-sizing: border-box;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  background-color: #19529c;
+
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.timelineContainer {
+  padding: 10px 50px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.timelineContainer::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #61d4e8;
+  border: 4px solid #2da1e7;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 10px 20px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+.split-info {
+  display: block;
+}
+.split-info span {
+  display: block;
+  float: right;
+  font-weight:initial;
+}
+/* .content > h4,h5{
+      
+  }
+  .content > h5{
+    display: inline;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 12px;
-    margin: 0 40px;
+} */
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
   }
-  .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center ;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    /* width: 400px; */
-    height: 100%;
-  }
-  
-  .card:hover {
-    box-shadow: 0 16px 8px 8px rgba(245, 211, 117, 0.671);
-  }
-  .textContainer {
+
+  /* Full-width containers */
+  .timelineContainer {
     width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
   }
-  .textContainer h4,p{
-    padding-left:  20px;
 
+  /* Make sure that all arrows are pointing leftwards */
+  .timelineContainer::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
   }
-  .project{
-      display: grid;
-      grid-template-columns: repeat(2,minmax(300px, 500px));
-      justify-items: center;
-      align-items: center;
-      align-content: center;
-      justify-content: space-around;
-      gap: 20px;
-      padding: 0 40px;
-  }
-  .mobileProject{
-    display: grid;
-    grid-template-columns: repeat(3,minmax(200px,300px));
-    justify-items: center;
-    align-items: center;
-    align-content: center;
-    gap: 20px;
-    justify-content: space-around;
 
+  /* Make sure all circles are at the same spot */
+  .left::after,
+  .right::after {
+    left: 15px;
   }
-  .detailsContainer{
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      align-content: center;
-      justify-items: center;
-      /* height: 200px; */
 
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
   }
-  .contactDetail{
-      width: 120px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
-      padding: 20px;
-      border-radius: 10px;
-  }
-  .contactDetail a{
-    color: white;
-
-  }
- .projectImage{
-     width: 100%;
- }
- .projectTitle{
-     font-size:1.7em;
-     text-align: center;
-     padding: 50px 0 30px 0;
- }
- .ProjectConatainer{
-     margin: 20px 0;
- }
- ion-icon{
-     margin:0 5px;
-     color: white;
-
- }
- a{
-     text-decoration: none;
- }
- .phoneText{
-    display: none;
 }
-.contactContainer{
-    padding: 20px 0;
-}
-.mobileProject img{
-    max-height: 700px;
-}
+
 @media only screen and (max-width: 700px) {
-
-    .mobileProject{
-    grid-template-columns: repeat(2,minmax(200px,300px));
-
-    }
-    .detailsContainer{
-        flex-wrap: wrap;
-    }
-    .contactDetail{
-        margin-bottom: 20px;
-
-    }
+  .mobileProject {
+    grid-template-columns: repeat(2, minmax(200px, 300px));
+  }
+  .detailsContainer {
+    flex-wrap: wrap;
+  }
+  .contactDetail {
+    margin-bottom: 20px;
+  }
 }
 
- @media only screen and (max-width: 600px) {
-.linkConatiner{
+@media only screen and (max-width: 600px) {
+  .linkConatiner {
     display: none;
-}
-.navContainer{
-    grid-template-columns: 1fr ;
-    grid-template-areas: 
-      "logoContainer ";
-}
-.mainText{
+  }
+  .navContainer {
+    grid-template-columns: 1fr;
+    grid-template-areas: "logoContainer ";
+  }
+  .mainText {
     display: none;
-}
-.phoneText{
+  }
+  .phoneText {
     display: grid;
     text-align: center;
-    font-size: 1.500000em;
-}
-.buttonContainer{
+    font-size: 1.5em;
+  }
+  .buttonContainer {
     display: grid;
     grid-gap: 30px;
     grid-template-columns: repeat(auto, 1fr);
-}
-.button {
+  }
+  .button {
     padding: 15px 32px;
     text-align: center;
     font-size: 1em;
     width: 8em;
     font-size: 1.2em;
   }
-  .project{
+  .project {
     display: grid;
     grid-template-columns: 1fr;
     gap: 40px;
   }
-  .mobileProject{
+  .mobileProject {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
     align-content: center;
     gap: 20px;
     justify-content: space-around;
-
   }
-  .card{
-      padding: 20px 10px;
+  .card {
+    padding: 20px 10px;
   }
-  .detailsContainer{
+  .detailsContainer {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     /* height: 400px; */
   }
-  .detailsContainer > div{
+  .detailsContainer > div {
     margin-bottom: 20px;
   }
-  .contactDetail{
-      /* width: 100%; */
+  .contactDetail {
+    /* width: 100%; */
   }
- }
- @media only screen and (max-width: 500px) {
-     .mobileProject{
-        display: grid;
-        grid-template-columns: 1fr;
-     }
-    
- }
+}
+@media only screen and (max-width: 500px) {
+  .mobileProject {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
