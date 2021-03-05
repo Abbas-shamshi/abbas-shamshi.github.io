@@ -219,6 +219,9 @@ body{
  .phoneText{
     display: none;
 }
+.mobileProject img{
+    max-height: 500px;
+}
 @media only screen and (max-width: 900px) {
 
     /* .project{
