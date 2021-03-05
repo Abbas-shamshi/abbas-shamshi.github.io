@@ -181,6 +181,8 @@ body{
       display: flex;
       align-items: center;
       justify-content: space-around;
+      align-content: center;
+      justify-items: center;
       /* height: 200px; */
 
   }
