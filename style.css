@@ -181,7 +181,7 @@ body{
       display: flex;
       align-items: center;
       justify-content: space-around;
-      height: 200px;
+      /* height: 200px; */
 
   }
   .contactDetail{
@@ -278,10 +278,16 @@ body{
       padding: 20px 10px;
   }
   .detailsContainer{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-      height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    /* height: 400px; */
+  }
+  .detailsContainer > div{
+    margin-bottom: 20px;
+  }
+  .contactDetail{
+      /* width: 100%; */
   }
  }
