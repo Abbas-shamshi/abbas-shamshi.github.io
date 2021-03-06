@@ -69,11 +69,11 @@ body {
 } */
 .navContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   grid-template-areas: "logoContainer  linkConatiner";
   justify-content: center;
   align-items: center;
-  background-color: cornflowerblue;
+  /* background-color: cornflowerblue; */
   padding: 10px;
   color: #013594;
 }
@@ -89,13 +89,19 @@ body {
 .links > li:hover {
   color: #84848a;
 }
+.fullContainer{
+  background-image: url(./media/skyline.jpg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
 .mainContainer {
   height: 400px;
-  background-color: grey;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  
 }
 .mainText {
   text-align: center;
@@ -151,7 +157,7 @@ p {
 }
 .mobileProject {
   display: grid;
-  grid-template-columns: repeat(3, minmax(200px, 300px));
+  grid-template-columns: repeat(3, minmax(200px, 340px));
   justify-items: center;
   align-items: center;
   align-content: center;
