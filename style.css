@@ -385,7 +385,8 @@ a {
   .phoneText {
     display: grid;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.4em;
+    padding: 0 10px;
   }
   .buttonContainer {
     display: grid;
