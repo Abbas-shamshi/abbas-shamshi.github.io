@@ -9,7 +9,9 @@
 
   <!-- Linking my external CSS and JS -->
   <link id="cssAddr" rel="stylesheet" href="style.css" type="text/css" />
-  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script> <!-- ion icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- FontAwesome -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
 </head>
 
@@ -305,26 +307,32 @@
     <div id="Contact" class="contactContainer">
       <div class="headTitle">Contact Details</div>
       <div class="detailsContainer">
-        <div class="contactDetail">
-          <a href="mailto:abbasfayyaz.shamshi@pace.edu">
-            <ion-icon name="mail-outline"></ion-icon> Email
-          </a>
-        </div>
-        <div class="contactDetail">
-          <a href="tel:+15512601554">
-            <ion-icon name="call-outline"></ion-icon> Phone
-          </a>
-        </div>
-        <div class="contactDetail">
-          <a href="https:www.twitter.com/Abbas_Shamshi" target="_blank">
+        <a class="contactDetailAnchor" href="mailto:abbasfayyaz.shamshi@pace.edu">
+          <div class="contactDetail">
+            <ion-icon name="mail-sharp"></ion-icon>Email
+          </div>
+        </a>
+        <a class="contactDetailAnchor" href="tel:+15512601554">
+          <div class="contactDetail">
+            <ion-icon name="call-sharp"></ion-icon> Phone
+          </div>
+        </a>
+        <a class="contactDetailAnchor" href="https:www.twitter.com/Abbas_Shamshi" target="_blank">
+          <div class="contactDetail">
             <ion-icon name="logo-twitter"></ion-icon>Twitter
-          </a>
-        </div>
-        <div class="contactDetail">
-          <a href="https:www.facebook.com/abbas.shamshi" target="_blank">
-            <ion-icon name="logo-facebook"></ion-icon> Facebook
-          </a>
-        </div>
+          </div>
+        </a>
+        <a class="contactDetailAnchor" href="https:www.facebook.com/abbas.shamshi" target="_blank">
+          <div class="contactDetail">
+            <i class="fa fa-quora" aria-hidden="true"></i> Quora
+          </div>
+        </a>
+        <a class="contactDetailAnchor" href="https:www.facebook.com/abbas.shamshi" target="_blank">
+          <div class="contactDetail">
+            <i class="fa fa-facebook" aria-hidden="true"></i> Facebook
+          </div>
+        </a>
+
       </div>
     </div>
   </div>

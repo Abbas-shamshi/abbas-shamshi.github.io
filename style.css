@@ -192,11 +192,15 @@ p {
 }
 .detailsContainer {
   display: flex;
+  flex-wrap:wrap;
   align-items: center;
   justify-content: space-around;
   align-content: center;
   justify-items: center;
-  /* height: 200px; */
+}
+.detailsContainer div{
+  margin-bottom: 20px;
+
 }
 .contactDetail {
   min-width: 150px;
@@ -204,10 +208,10 @@ p {
   justify-content: center;
   align-items: center;
   background: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
-  padding: 20px;
+  padding: 15px;
   border-radius: 10px;
 }
-.contactDetail a {
+.contactDetailAnchor {
   color: white;
 }
 .projectImage {
@@ -224,6 +228,10 @@ p {
 ion-icon {
   margin: 0 5px;
   color: white;
+}
+i{
+    margin: 0 5px;
+    color: white;
 }
 a {
   text-decoration: none;
