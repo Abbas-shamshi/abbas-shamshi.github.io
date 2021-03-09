@@ -67,6 +67,7 @@ body {
     
     ;
 } */
+
 .navContainer {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -75,12 +76,26 @@ body {
   align-items: center;
   /* background-color: cornflowerblue; */
   padding: 10px;
-  color: #013594;
+  color: #0d324d;
+}
+
+.gradientText{
+  /* background: -webkit-linear-gradient(315deg,#0d324d  0%, #7f5a83 74%);
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
 }
 .links {
   display: flex;
   list-style-type: none;
   justify-content: space-evenly;
+}
+.links a{
+  color: #0d324d;
+
+}
+a:hover{
+  color: white;
 }
 .logoContainer {
   margin-left: 10px;
@@ -106,6 +121,7 @@ body {
 .mainText {
   text-align: center;
   font-size: 1.95em;
+  
 }
 .buttonContainer {
   display: flex;
