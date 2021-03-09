@@ -403,6 +403,9 @@ a {
   .contactDetail {
     margin-bottom: 20px;
   }
+  .mainText {
+    font-size: 1.80em;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -428,7 +431,7 @@ a {
     grid-template-columns: repeat(auto, 1fr);
   }
   .button {
-    padding: 15px 32px;
+    padding: 15px 20px;
     text-align: center;
     font-size: 1em;
     width: 8em;
