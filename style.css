@@ -254,7 +254,7 @@ a {
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
-  background-color: #19529c;
+  background:linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
 
   position: relative;
   margin: 0 auto;
