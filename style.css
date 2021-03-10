@@ -1,9 +1,13 @@
+:root {
+  --main-btn-color: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);;
+}
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fcfcfc;
   margin: 0;
 }
 .navContainer {
@@ -105,7 +109,7 @@ a:hover{
   color: #84848a;
 }
 .fullContainer{
-  background-image: url(./media/skyline.jpg);
+  background-image: url(../media/skyline.jpg);
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
@@ -118,7 +122,7 @@ a:hover{
   justify-content: space-evenly;
   
 }
-.mainText {
+.mainText h1,h2{
   text-align: center;
   font-size: 1.95em;
   
@@ -129,8 +133,7 @@ a:hover{
   align-items: stretch;
 }
 .button {
-  background: rgb(131, 58, 180);
-  background: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+  background: var(--main-btn-color);
   border: none;
   color: white;
   padding: 15px 32px;
@@ -149,7 +152,7 @@ a:hover{
   margin-bottom: 10px;
 }
 .cardButton {
-  background: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+  background: var(--main-btn-color);
   color: white;
   text-align: center;
   text-decoration: none;
@@ -224,7 +227,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+  background: var(--main-btn-color);
   padding: 15px;
   border-radius: 10px;
 }
@@ -270,7 +273,7 @@ a {
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
-  background:linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+  background:var(--main-btn-color);
 
   position: relative;
   margin: 0 auto;
@@ -310,13 +313,6 @@ a {
   z-index: 1;
 }
 
-.timelineHead::after{
-  background:linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
-  border: 6px solid #2da1e7;
-  width: 30px;
-  height: 30px;
-  right: -20px;
-}
 /* Place the container to the left */
 .left {
   left: 0;
@@ -395,8 +391,11 @@ a {
   .contactDetail {
     margin-bottom: 20px;
   }
-  .mainText {
+  .mainText h1{
     font-size: 1.80em;
+  }
+  .mainText h2{
+    font-size: 1.75em;
   }
 }
 /* Media queries - Responsive timeline on screens less than 700px wide */
@@ -429,9 +428,7 @@ a {
   .right::after {
     left: 15px;
   }
-  .timelineHead::after{
-    left: 10px;
-  }
+  
 
   /* Make all right containers behave like the left ones */
   .right {
@@ -452,6 +449,14 @@ a {
     text-align: center;
     font-size: 1.4em;
     padding: 0 10px;
+  }
+  .phoneText h1,h2{
+    font-size: 1.2em;
+    padding: 0 10px;
+    margin: 5px 0;
+  }
+  .role{
+    display: none;
   }
   .buttonContainer {
     display: grid;
