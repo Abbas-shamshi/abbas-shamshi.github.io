@@ -182,7 +182,7 @@ a:hover{
 }
 
 .card:hover {
-  box-shadow: 0 16px 8px 8px rgba(245, 211, 117, 0.671);
+  box-shadow: 6px 8px 10px 6px rgb(245 211 117 / 70%);
 }
 .textContainer {
   width: 100%;
@@ -198,7 +198,7 @@ p {
   align-items: center;
   align-content: center;
   justify-content: space-around;
-  gap: 20px;
+  grid-gap: 40px 20px;
   padding: 0 40px;
 }
 .mobileProject {
@@ -207,7 +207,7 @@ p {
   justify-items: center;
   align-items: center;
   align-content: center;
-  gap: 20px;
+  grid-gap: 40px 20px;
   justify-content: space-around;
 }
 .detailsContainer {
