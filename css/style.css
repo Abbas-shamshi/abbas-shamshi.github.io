@@ -1,9 +1,9 @@
 :root {
-  --main-bl-color:   #0d324d;
-  --main-wht-color:   #fcfcfc;
-
-  --main-grdn-color:linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+  --main-bl-color: #0d324d;
+  --main-wht-color: #fcfcfc;
+  --main-grdn-color: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -13,67 +13,72 @@ body {
   background-color: #fcfcfc;
   margin: 0;
 }
+
 .navContainer {
   grid-area: navContainer;
 }
+
 .logoContainer {
   grid-area: logoContainer;
 }
+
 .name {
   grid-area: name;
 }
+
 .role {
   grid-area: role;
 }
+
 .linkConatiner {
   grid-area: linkConatiner;
 }
+
 .links {
   grid-area: links;
 }
+
 .Container {
   grid-area: Container;
 }
+
 .mainContainer {
   grid-area: mainContainer;
 }
+
 .mainText {
   grid-area: mainText;
 }
+
 .buttonContainer {
   grid-area: buttonContainer;
 }
+
 .button {
   grid-area: button;
 }
+
 .ProjectConatainer {
   grid-area: ProjectConatainer;
 }
+
 .headTitle {
   grid-area: headTitle;
 }
+
 .project {
   grid-area: project;
 }
+
 .contactContainer {
   grid-area: contactContainer;
 }
+
 .contactDetail {
   grid-area: contactDetail;
 }
-/* .Container{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    "navContainer navContainer"
-    "mainContainer mainContainer"
-    "ProjectConatainer ProjectConatainer"
-    "contactContainer contactContainer"
-    
-    
-    ;
-} */
+
+/* Navigation bar  */
 
 .navContainer {
   display: grid;
@@ -81,7 +86,6 @@ body {
   grid-template-areas: "logoContainer  linkConatiner";
   justify-content: center;
   align-items: center;
-  /* background-color: cornflowerblue; */
   padding: 10px;
   color: #0d324d;
 }
@@ -91,55 +95,81 @@ body {
   list-style-type: none;
   justify-content: space-evenly;
 }
-.links a{
-  color: var(--main-wht-color);
 
+.links a {
+  color: var(--main-wht-color);
 }
-a:hover{
-  
+
+a:hover {
   color: white;
 }
-.links a{
- margin-left:10px ;
+
+.links a {
+  margin-left: 10px;
 }
-.links a:hover{
+
+.links a:hover {
   -webkit-transform: scale(1.2);
-  -moz-transform:scale(1.2);
+  -moz-transform: scale(1.2);
 }
+
 .logoContainer {
   margin-left: 10px;
   font-size: 1.2em;
   color: var(--main-wht-color);
 }
-.links > li:hover {
+
+.links>li:hover {
   color: #84848a;
 }
-.fullContainer{
-  /* background-image: url(../media/skyline.jpg); */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
+
+/* Navigation bar ends here */
+
+/* General Container */
+
+.headTitle {
+  font-size: 1.7em;
+  text-align: center;
+  padding: 50px 0 30px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* General Container Ends*/
+
+/* Main Container  */
+
+.fullContainer {
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
   background-size: cover;
   background-color: var(--main-bl-color)
 }
+
 .mainContainer {
   height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  
 }
-.mainText h1,h2{
+
+.mainText h1, h2 {
   text-align: center;
   font-size: 1.95em;
   color: var(--main-wht-color);
-  
 }
+
 .buttonContainer {
   display: flex;
   justify-content: space-evenly;
   align-items: stretch;
 }
+
 .button {
   border: none;
   padding: 15px 32px;
@@ -151,23 +181,43 @@ a:hover{
   margin: 0 40px;
   font-weight: bold;
 }
-.colorWhtBlu{
+
+.colorWhtBlu {
   color: var(--main-bl-color);
   background: var(--main-wht-color);
-
 }
-.button i{
+
+.button i {
   color: var(--main-bl-color);
-
 }
 
-.cardButtonContainer{
+.phoneText {
+  display: none;
+}
+
+/* Main container ends here */
+
+/* Project Container */
+
+.project {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 500px));
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  grid-gap: 40px 20px;
+  padding: 0 40px;
+}
+
+.cardButtonContainer {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
   align-items: center;
   margin-bottom: 10px;
 }
+
 .cardButton {
   background: var(--main-bl-color);
   color: white;
@@ -175,9 +225,9 @@ a:hover{
   text-decoration: none;
   font-size: 16px;
   border-radius: 12px;
-  /* margin: 0 40px; */
   padding: 10px 30px;
 }
+
 .card {
   display: flex;
   flex-direction: column;
@@ -189,37 +239,42 @@ a:hover{
   border-radius: 15px;
   overflow: auto;
 }
-.isdisabled{
+
+.isdisabled {
   color: currentColor;
   cursor: not-allowed;
   opacity: 0.6;
   text-decoration: none;
 }
 
-.card p{
+.card p {
   padding-right: 5px;
 }
 
 .card:hover {
   box-shadow: 6px 8px 10px 6px rgb(245 211 117 / 70%);
 }
+
 .textContainer {
   width: 100%;
 }
-.textContainer h4,
-p {
+
+.textContainer h4, p {
   padding-left: 20px;
 }
-.project {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(300px, 500px));
-  justify-items: center;
-  align-items: center;
-  align-content: center;
-  justify-content: space-around;
-  grid-gap: 40px 20px;
-  padding: 0 40px;
+
+.projectImage {
+  width: 100%;
 }
+
+.ProjectConatainer {
+  margin: 20px 0;
+}
+
+/* Project Container Ends */
+
+/* Mobile project Container */
+
 .mobileProject {
   display: grid;
   grid-template-columns: repeat(3, minmax(200px, 340px));
@@ -229,18 +284,28 @@ p {
   grid-gap: 40px 20px;
   justify-content: space-around;
 }
+
+.mobileProject img {
+  max-height: 700px;
+}
+
+/* Mobile project Container Ends */
+
+/* Contact Details Container */
+
 .detailsContainer {
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   align-content: center;
   justify-items: center;
 }
-.detailsContainer div{
-  margin-bottom: 20px;
 
+.detailsContainer div {
+  margin-bottom: 20px;
 }
+
 .contactDetail {
   min-width: 150px;
   display: flex;
@@ -250,55 +315,43 @@ p {
   padding: 15px;
   border-radius: 10px;
 }
+
 .contactDetailAnchor {
   color: white;
 }
-.projectImage {
-  width: 100%;
-}
-.headTitle {
-  font-size: 1.7em;
-  text-align: center;
-  padding: 50px 0 30px 0;
-}
-.ProjectConatainer {
-  margin: 20px 0;
-}
+
 ion-icon {
   margin: 0 5px;
   color: white;
 }
-i{
-    margin: 0 5px;
-    color: white;
+
+i {
+  margin: 0 5px;
+  color: white;
 }
-a {
-  text-decoration: none;
-}
-.phoneText {
-  display: none;
-}
+
 .contactContainer {
   padding: 20px 0;
 }
-.mobileProject img {
-  max-height: 700px;
-}
+
+/* Contact Details Container Ends*/
 
 /* =============Time Line========= */
+
 * {
   box-sizing: border-box;
 }
 
 /* The actual timeline (the vertical ruler) */
-.timeline {
-  background:var(--main-bl-color);
 
+.timeline {
+  background: var(--main-bl-color);
   position: relative;
   margin: 0 auto;
 }
 
 /* The actual timeline (the vertical ruler) */
+
 .timeline::after {
   content: "";
   position: absolute;
@@ -311,6 +364,7 @@ a {
 }
 
 /* Container around content */
+
 .timelineContainer {
   padding: 10px 50px;
   position: relative;
@@ -319,6 +373,7 @@ a {
 }
 
 /* The circles on the timeline */
+
 .timelineContainer::after {
   content: "";
   position: absolute;
@@ -333,16 +388,19 @@ a {
 }
 
 /* Place the container to the left */
+
 .left {
   left: 0;
 }
 
 /* Place the container to the right */
+
 .right {
   left: 50%;
 }
 
 /* Add arrows to the left container (pointing right) */
+
 .left::before {
   content: " ";
   height: 0;
@@ -357,6 +415,7 @@ a {
 }
 
 /* Add arrows to the right container (pointing left) */
+
 .right::before {
   content: " ";
   height: 0;
@@ -371,69 +430,58 @@ a {
 }
 
 /* Fix the circle for containers on the right side */
+
 .right::after {
   left: -16px;
 }
 
 /* The actual content */
+
 .content {
   padding: 10px 20px;
   background-color: white;
   position: relative;
   border-radius: 6px;
 }
+
 .split-info {
   display: block;
 }
+
 .split-info span {
   display: block;
   float: right;
-  font-weight:initial;
+  font-weight: initial;
 }
-/* .content > h4,h5{
-      
-  }
-  .content > h5{
-    display: inline;
-    text-align: center;
-} */
 
 /* Media queries - Responsive timeline on screens less than 700px wide */
 
 @media only screen and (max-width: 700px) {
-    /* Place the timelime to the left */
-
-    .timeline::after {
-    
-      left: 31px;
-    }
-  
-    /* Full-width containers */
-    .timelineContainer {
-      width: 100%;
-      padding-left: 70px;
-      padding-right: 25px;
-    }
-  
-    /* Make sure that all arrows are pointing leftwards */
-    .timelineContainer::before {
-      left: 60px;
-      border: medium solid white;
-      border-width: 10px 10px 10px 0;
-      border-color: transparent white transparent transparent;
-    }
-  
-    /* Make sure all circles are at the same spot */
-    .left::after,
-    .right::after {
-      left: 15px;
-    }
-    
-  
-    /* Make all right containers behave like the left ones */
-    .right {
-      left: 0%;
-    }
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+  /* Full-width containers */
+  .timelineContainer {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  /* Make sure that all arrows are pointing leftwards */
+  .timelineContainer::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
   .mobileProject {
     grid-template-columns: repeat(2, minmax(200px, 300px));
   }
@@ -443,23 +491,24 @@ a {
   .contactDetail {
     margin-bottom: 20px;
   }
-  .mainText h1{
+  .mainText h1 {
     font-size: 1.80em;
   }
-  .mainText h2{
+  .mainText h2 {
     font-size: 1.75em;
   }
 }
+
 /* Media queries - Responsive timeline on screens less than 700px wide */
 
 @media only screen and (max-width: 600px) {
-
-  .linkConatiner {
-    display: none;
-  }
+  /* Main Container */
   .navContainer {
     grid-template-columns: 1fr;
     grid-template-areas: "logoContainer ";
+  }
+  .linkConatiner {
+    display: none;
   }
   .mainText {
     display: none;
@@ -470,12 +519,12 @@ a {
     font-size: 1.4em;
     padding: 0 10px;
   }
-  .phoneText h1,h2{
+  .phoneText h1, h2 {
     font-size: 1.2em;
     padding: 0 10px;
     margin: 5px 0;
   }
-  .role{
+  .role {
     display: none;
   }
   .buttonContainer {
@@ -490,6 +539,8 @@ a {
     width: 8em;
     font-size: 1.1em;
   }
+
+  /* Main Container Ends */
   
   .project {
     display: grid;
@@ -505,23 +556,17 @@ a {
     gap: 20px;
     justify-content: space-around;
   }
-  .card {
-    /* padding: 20px 10px; */
-  }
   .detailsContainer {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    /* height: 400px; */
   }
-  .detailsContainer > div {
+  .detailsContainer>div {
     margin-bottom: 20px;
   }
-  .contactDetail {
-    /* width: 100%; */
-  }
 }
+
 @media only screen and (max-width: 500px) {
   .mobileProject {
     display: grid;
