@@ -1,6 +1,6 @@
 :root {
-  --main-btn-color:   #0d324d;
-  --main-bck-color:   #C7E4FF;
+  --main-bl-color:   #0d324d;
+  --main-wht-color:   #fcfcfc;
 
   --main-grdn-color:linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
 }
@@ -86,19 +86,13 @@ body {
   color: #0d324d;
 }
 
-.gradientText{
-  /* background: -webkit-linear-gradient(315deg,#0d324d  0%, #7f5a83 74%);
-  font-weight: bold;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
-}
 .links {
   display: flex;
   list-style-type: none;
   justify-content: space-evenly;
 }
 .links a{
-  color: #0d324d;
+  color: var(--main-wht-color);
 
 }
 a:hover{
@@ -115,6 +109,7 @@ a:hover{
 .logoContainer {
   margin-left: 10px;
   font-size: 1.2em;
+  color: var(--main-wht-color);
 }
 .links > li:hover {
   color: #84848a;
@@ -124,7 +119,7 @@ a:hover{
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
-  background-color: var(--main-bck-color)
+  background-color: var(--main-bl-color)
 }
 .mainContainer {
   height: 400px;
@@ -137,6 +132,7 @@ a:hover{
 .mainText h1,h2{
   text-align: center;
   font-size: 1.95em;
+  color: var(--main-wht-color);
   
 }
 .buttonContainer {
@@ -145,9 +141,7 @@ a:hover{
   align-items: stretch;
 }
 .button {
-  background: var(--main-btn-color);
   border: none;
-  color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -155,7 +149,18 @@ a:hover{
   font-size: 1.2em;
   border-radius: 12px;
   margin: 0 40px;
+  font-weight: bold;
 }
+.colorWhtBlu{
+  color: var(--main-bl-color);
+  background: var(--main-wht-color);
+
+}
+.button i{
+  color: var(--main-bl-color);
+
+}
+
 .cardButtonContainer{
   display: flex;
   width: 100%;
@@ -164,7 +169,7 @@ a:hover{
   margin-bottom: 10px;
 }
 .cardButton {
-  background: var(--main-btn-color);
+  background: var(--main-bl-color);
   color: white;
   text-align: center;
   text-decoration: none;
@@ -241,7 +246,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--main-btn-color);
+  background: var(--main-bl-color);
   padding: 15px;
   border-radius: 10px;
 }
@@ -287,7 +292,7 @@ a {
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
-  background:var(--main-btn-color);
+  background:var(--main-bl-color);
 
   position: relative;
   margin: 0 auto;
