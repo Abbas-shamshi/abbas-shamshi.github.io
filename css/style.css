@@ -1,6 +1,6 @@
 :root {
   --main-bl-color: #0d324d;
-  --main-wht-color: #E3D7FF;
+  --main-wht-color: #EFF9F0;
   --main-scn-color:#ADB6C4;
   --main-grdn-color: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
 }
@@ -526,6 +526,7 @@ i {
     font-size: 1.2em;
     padding: 0 10px;
     margin: 5px 0;
+    color: var(--main-wht-color);
   }
   .role {
     display: none;
